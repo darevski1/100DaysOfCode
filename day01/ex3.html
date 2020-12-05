@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+
+<script>
+    //     Write a web page that uses the prompt to get the user to input their first name and then
+    // their year of birth. Calculate how old they are and write it to the web page (assume everyone
+    // was born on the first day of January of this year)
+
+
+    let name = prompt("What is your name ");
+    let age = prompt("What year u war born");
+    let date = new Date();
+    let getCurrentYear = date.getFullYear();
+
+
+    let result = (getCurrentYear - age);
+
+
+    console.log(result);
+
+
+</script>
+
+</html>

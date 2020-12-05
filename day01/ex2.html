@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="pic"></div>
+    <script>
+        function createImg() {
+            let img = document.createElement('img');
+            img.src = "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fhtml.com%2Fwp-content%2Fuploads%2Fvery-large-flamingo.jpg&f=1&nofb=1";
+
+            document.getElementById("pic").appendChild(img);
+        }
+        createImg();
+    </script>
+</body>
+
+</html>

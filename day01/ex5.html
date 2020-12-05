@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // Generate random numbe between 0 -3
+        let randomNum = (min = 0, max = 2);
+        let generate = console.log(Math.floor(Math.random() * (max - min) + min))
+
+
+
+        let userInput = prompt("Pick 0 for Rock, 1 for Paper, or 2 for Scissors");
+        if ((userInput == 0) && (randomNum == 1)) {
+            console.log("Computer beats you"); zx
+        }
+        else if ((userInput == 1) && (randomNum == 0)) {
+            console.log("You beat the computer")
+        }
+
+    </script>
+</body>
+
+</html>
