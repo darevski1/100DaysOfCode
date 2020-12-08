@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="text-gray-900 leading-tight">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/semantic-ui/dist/semantic.css">
+</head>
+
+<body class="min-h-screen bg-gray-100">
+    poraka<div id="error"></div>
+    <!-- Validation -->
+    <form class="mt-8 space-y-6" action="" onSubmit="return validateInput()">
+        <label for="username">Username</label><br>
+        <input type="text" name="username" id="username">
+        <br />
+        <label for="firstname">Firstname</label><br>
+        <input type="text" name="firstName">
+        <br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email">
+        <br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password">
+        <br>
+        <label for="password1">Retype password</label><br>
+        <input type="password" name="password1">
+        <br>
+        <button type="submit" name="submit" class="btn btn-block">Submit</button>
+    </form>
+
+    <script>
+        function validateInput() {
+            let message = [];
+
+            let userName = document.getElementById('username').value;
+            // let firstName = document.getElementById('firstName').value;
+            // let password = document.getElementById('password').value;
+            // let password1 = document.getElementById('password1').value;
+
+
+            if (userName == '') {
+                msg = message.push("Please fill username");
+                let error = document.getElementById('error').innerHTML = msg;
+            }
+            else {
+                return true;
+            }
+
+
+
+        }
+        validateInput();
+    </script>
+</body>
+
+</html>
