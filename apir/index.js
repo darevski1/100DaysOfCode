@@ -1,6 +1,5 @@
 // import db connection
-// const db = require("./pkg/db/index");
-
+const db = require("./pkg/db");
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -16,7 +15,7 @@ api.get('/cars', cars.getAll);
 api.get('/cars/:id', cars.getOne);
 api.post('/cars', cars.save);
 api.put('/cars/:id', cars.update);
-api.patch('cars/:id', cars.updatePartials);
+api.patch('/cars/:id', cars.updatePartials);
 api.delete('/cars/:id', cars.remove);
 
 
